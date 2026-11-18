@@ -1,0 +1,442 @@
+html {
+            scroll-behavior: smooth;
+        }
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .container {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: .5px solid rgba(226, 232, 240, 0.6);
+      border-radius: 16px;
+      box-shadow: 
+        0 4px 6px -1px rgba(0, 0, 0, 0.02), 
+        0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 32px;
+      height: 70px;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 24px;
+      color: #85b7d4; 
+      letter-spacing: -0.5;
+      cursor: pointer;
+    }
+
+    .nav {
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: #64748b;
+        font-size: 15px;
+        font-weight: 600;
+      transition: color 0.2s ease;
+       }
+
+       .nav a:hover {
+         color: #85b7d4; 
+       }
+
+        body {
+            background-color: #f8fafc;
+            font-family: Inter, sans-serif; 
+            flex-direction: column;  
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 40px;
+        }
+
+        .content-wrapper {
+           display: flex;
+           flex-direction: column; 
+           align-items: center;
+           padding-top: 120px;
+           gap: 40px; 
+           width: 100%;
+         }
+      
+        .card {
+            background-color: #ffffff;
+            width: 90%; /* so it doesn't look broken if i ever (i hope i never tho) switch to a phone or small PC */
+            max-width: 1050px; /* so the width cannot be more than 1050 pixels */
+            margin: 0 auto; /* so it's on the centre of the screen */
+            border-radius: 15px; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+            overflow: hidden; 
+            transition: all 0.3s ease; 
+            padding: 0px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 260px;
+            object-fit: cover; 
+            display: block;
+        }
+      
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+  
+        ul {
+           padding-left: 20px; 
+        }
+
+        ol{
+          padding-left: 20px;
+        }
+    
+        li {
+           margin-bottom: 8px;
+
+        }
+
+        .inputs{
+          width: 100%;
+          padding: 10px;
+          margin: 5px 0 15px 0;
+          border: .5px solid #1e6569;
+          border-radius: 6px;
+        }
+
+        .comments{
+          height: 160px;
+          width: 100%; 
+          font-family: Inter, sans-serif;
+          padding: 10px;
+          margin: 5px 0 15px 0;
+          border: .5px solid #1e6569;
+          border-radius: 6px;
+          resize: none;  /* this is to make sure the user can't change the box's size */
+          line-height: 1.5;
+        }
+
+        .btn {
+          background-color: #85b7d4; /* if u haven't already noticed, it's the brand colour */
+          color: white;
+          font-weight: 600;
+          font-size: 16px;
+          padding: 16px 32px; 
+          border: none; 
+          border-radius: 12px; 
+          cursor: pointer; 
+          width: 100%; 
+        }
+
+        .btn:hover {
+         background-color: #6a9cb8; /* this makes it dark blue when u hover over the button */
+         transform: translateY(-3px); /* this makes the button move up 3 pixels */
+         transition: .5s; /* this makes the transition 0.5 seconds long */
+        }
+
+        .btn:active {
+         transform: translateY(3px); /* this makes the button move down 3 pixels */
+      }
+
+        .footer {
+          width: 100%;
+          background-color: #85b7d4; /* Brand color bg */
+          text-align: center;
+          padding: 15px 0;
+          margin-top: auto; /* Pushes footer to the bottom */
+        }
+
+        .footer p {
+          color: white; /* white is pretty so that's why 😁 */
+          font-size: 0.9rem;
+          margin: 0;
+        } 
+
+.hero {
+    width: 90%;
+    max-width: 1100px;
+    min-height: 520px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 45px 0;
+}
+
+/* LEFT SIDE */
+
+.hero-content {
+    flex: 1;
+    max-width: 540px;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: #e4f2f9;
+    color: #609bbd;
+    padding: 10px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.hero-content h1 {
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.1;
+    color: #243746;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+    color: #85b7d4;
+}
+
+.hero-content p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #85b7d4;
+    color: white;
+    padding: 16px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #6a9cb8;
+    transform: translateY(-4px);
+}
+
+.secondary-btn {
+    color: #526b7d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    color: #85b7d4;
+}
+
+/* STATS */
+
+.hero-stats {
+    display: flex;
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.hero-stats h3 {
+    color: #85b7d4;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.hero-stats span {
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+/* RIGHT SIDE */
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    background: linear-gradient(
+        135deg,
+        #d9edf7,
+        #edf6fa,
+        #b9d9e9
+    );
+    border-radius: 35px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Decorative circles */
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 50%;
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px dashed rgba(255,255,255,0.8);
+    border-radius: 50%;
+}
+
+/* Drone and package icons */
+
+.delivery-icon {
+    font-size: 115px;
+    z-index: 2;
+    transform: translateY(-20px);
+    animation: float 3s ease-in-out infinite;
+}
+
+.package-icon {
+    position: absolute;
+    font-size: 65px;
+    bottom: 75px;
+    right: 65px;
+    z-index: 3;
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+/* FLOATING DELIVERY CARD */
+
+.floating-card {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    background: white;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 4;
+}
+
+.floating-card h4 {
+    color: #334155;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.floating-card p {
+    color: #94a3b8;
+    font-size: 11px;
+    margin: 0;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    background: #36c98f;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.delivery-check {
+    margin-left: auto;
+    color: #36c98f;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ANIMATION */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(-35px);
+    }
+}
+
+/* TESTIMONIALS */
+
+.main-quotes {
+    width: 90%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin: 0 auto 30px;
+}
+
+.main-quotes p {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.main-quotes b {
+    color: #85b7d4;
+}
+

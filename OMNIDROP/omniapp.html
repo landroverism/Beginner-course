@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMNIDROP | Shop Everything</title>
+  <link rel="stylesheet" href="omniapp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">OMNI<span>DROP.</span></a>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+    </div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#products">Shop</a>
+      <a href="#categories">Categories</a>
+    </nav>
+
+    <div class="header-actions">
+      <button onclick="showWishlist()" aria-label="Wishlist">
+        <i class="far fa-heart"></i>
+      </button>
+      <button onclick="toggleCart()" class="cart-button" aria-label="Shopping cart">
+        <i class="fas fa-shopping-bag"></i>
+        <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">WELCOME TO OMNIDROP</span>
+        <h1>Everything you need.<br><span>One destination.</span></h1>
+        <p>Discover amazing products, explore new trends and shop your favorites all in one place.</p>
+        <a href="#products" class="primary-btn">Shop Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=900" alt="Modern shopping store">
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><i class="fas fa-truck"></i><span>Fast Delivery</span></div>
+      <div><i class="fas fa-shield-alt"></i><span>Secure Shopping</span></div>
+      <div><i class="fas fa-tags"></i><span>Great Deals</span></div>
+      <div><i class="fas fa-headset"></i><span>Customer Support</span></div>
+    </section>
+
+    <section class="categories" id="categories">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE</span>
+          <h2>Shop by Category</h2>
+        </div>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" onclick="filterCategory('Electronics')">
+          <i class="fas fa-laptop"></i><span>Electronics</span>
+        </button>
+        <button class="category-card" onclick="filterCategory('Fashion')">
+          <i class="fas fa-shirt"></i><span>Fashion</span>
+        </button>
+        <button class="category-card" onclick="filterCategory('Home')">
+          <i class="fas fa-couch"></i><span>Home & Living</span>
+        </button>
+        <button class="category-card" onclick="filterCategory('Beauty')">
+          <i class="fas fa-spa"></i><span>Beauty</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">OUR COLLECTION</span>
+          <h2>Trending Products</h2>
+        </div>
+        <button class="view-all" onclick="renderProducts(products)">View All <i class="fas fa-arrow-right"></i></button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Stay in the loop.</h2>
+      <p>Get updates about new arrivals and exclusive deals.</p>
+      <form onsubmit="subscribe(event)">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="subscribeMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo">OMNI<span>DROP.</span></a>
+    <p>Shop smarter. Live better.</p>
+    <p class="copyright">© 2026 OMNIDROP. All rights reserved.</p>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Your Shopping Bag</h2>
+      <button onclick="toggleCart()" aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Total</span>
+        <strong id="cartTotal">KSh 0</strong>
+      </div>
+      <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="omniapp.js"></script>
+</body>
+</html>

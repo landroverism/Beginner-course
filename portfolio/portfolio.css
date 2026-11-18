@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient( red, orange, yellow, green, blue, indigo, violet);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202c36;
+    min-height: 100vh;
+    padding: 35px 20px;
+}
+
+.portfolio {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 650px;
+    margin: 0 auto;
+    padding: 22px 35px 35px;
+    background-color: #f5f5ef;
+    border-radius: 14px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 4px 8px 20px;
+    border-bottom: 1px solid #ecece5;
+}
+
+.nav-left {
+    display: flex;
+    gap: 22px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #454943;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #202c36;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.hero {
+    margin: 25px 0 20px 12px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    line-height: 0.98;
+    letter-spacing: -1px;
+    font-weight: 800;
+    color: #202c36;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #858982;
+    letter-spacing: 0.1px;
+}
+
+
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    margin: 0 5px;
+}
+
+.project-card {
+    background-color: #f8f8f3;
+    border: 1px solid #e7e7df;
+    border-radius: 13px;
+    padding: 9px;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(32, 44, 54, 0.08);
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-info {
+    padding: 10px 1px 3px;
+}
+
+.project-info h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #252c2c;
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    font-size: 10px;
+    line-height: 1.45;
+    color: #858982;
+}

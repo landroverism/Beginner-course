@@ -1,0 +1,98 @@
+body {
+    background-color: #0b132b;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    color: #b0c4de;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.btn-hire {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #0070f3;
+}
+
+.hero-content p {
+    color: #8a99ad;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.btn-primary {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #1e293b;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(17, 17, 63); /* Brand color bg */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 130px; /* Pushes footer to the bottom */
+}
+
+.footer p {
+    color: white; /* white is pretty so that's why 😁 */
+    font-size: 0.9rem;
+    margin-top: 0;
+ } 

@@ -1,0 +1,49 @@
+.btn{
+    border: 1px solid red;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 5px;
+    background-color: red;
+    width: 140px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.btn p{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn2{
+   border: 1px solid rgb(10, 10, 101);
+    border-radius: 40px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(10, 10, 101);
+    width: 140px;
+    font-family: sans-serif;
+    cursor: pointer; 
+}
+
+.btn2 p{
+    color: white;
+    text-align: center;
+    font-weight: 700;
+}
+
+.btn3{
+   border: 1px solid rgb(120, 159, 243);
+    border-radius: 12px;
+    padding: 5px;
+    margin: 5px;
+    width: 140px;
+    font-family: sans-serif;
+    cursor: pointer; 
+}
+
+.btn3 p{
+    color: rgb(120, 159, 243);
+    text-align: center;
+    font-weight: 700;
+}

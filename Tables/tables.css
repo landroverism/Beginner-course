@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(232, 253, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: xx-large;
+    color: rgb(6, 6, 88);
+}
+
+table{
+    width: 70%;
+    background-color: white;
+    border-radius: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+td{
+    background-color: rgb(121, 171, 245);
+    color: rgb(6, 6, 88);
+}
+
+tr{
+    background-color: rgb(54, 85, 243);
+    color: rgb(6, 6, 88);
+    font-size: x-large;
+}
+
+.inputs{
+          width: 70%;
+          padding: 10px;
+          margin: 5px 0 15px 0;
+          border: .5px solid rgb(6, 6, 88);
+          border-radius: 6px;
+        }
+
+.form{
+     margin: 12px;
+     background-color: #ffffff;
+     width: 70%; 
+     max-width: 1050px; 
+     margin: 0 auto; 
+     border-radius: 15px; 
+     overflow: hidden;  
+    padding: 8px;
+}
+
+.btn {
+    background-color: rgb(6, 6, 88); 
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 32px; 
+    border: none; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    width: 70%; 
+}
+
+ .btn:hover {
+    background-color: rgb(6, 6, 88); 
+    transform: translateY(-3px); 
+    transition: .5s; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 40px 0 0 40px; 
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 40px 40px 0; 
+    padding: 8px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar button img {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
